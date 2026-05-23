@@ -4,9 +4,9 @@ import org.example.model.Producto;
 import java.util.List;
 
 public interface ProductoDAO {
-    void crear(Producto producto);
-    Producto leer(int id);
-    void actualizar(Producto producto);
-    void eliminar(int id);
-    List<Producto> listar();
+    List<Producto> listarTodos();
+    Producto buscarPorId(int idProducto);
+    boolean agregar(Producto producto);
+    boolean actualizar(Producto producto);
+    boolean eliminar(int idProducto);
 }
